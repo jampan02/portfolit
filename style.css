@@ -1,0 +1,605 @@
+@charset "UTF-8";
+* {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.7;
+  letter-spacing: 0.07em;
+}
+
+H1 {
+  font-size: 80px;
+}
+
+H2 {
+  font-size: 38px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+H4 {
+  font-size: 20px;
+}
+
+p,
+li,
+a {
+  color: #3b3c3d;
+}
+
+.header {
+  margin-bottom: 70px;
+  z-index: 100;
+  position: fixed;
+  height: 50px;
+  background-color: #eeeeee;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 8px -5px GRAY;
+          box-shadow: 0px 8px 8px -5px GRAY;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__content {
+  cursor: pointer;
+}
+
+.header .header__content a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .header__content:hover {
+  opacity: 0.5;
+}
+
+.top {
+  background-image: url("./images/top-image.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vm;
+  background-blend-mode: lighten;
+  position: relative;
+}
+
+.top .top__arrow {
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color: transparent transparent white white;
+  -webkit-transform: translateX(110%) translateY(45%) rotate(-45deg);
+          transform: translateX(110%) translateY(45%) rotate(-45deg);
+}
+
+.top .top__arrow:hover {
+  cursor: pointer;
+}
+
+.top .top-gotoprofile {
+  z-index: 10;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  left: 0;
+  margin: auto;
+  display: inline-block;
+  font-weight: bold;
+  height: 80px;
+  width: 100px;
+  padding: 0px;
+  text-decoration: none;
+  color: #00bcd4;
+  background: #b9b1b1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.top .top-gotoprofile:hover {
+  cursor: pointer;
+  background: #474646;
+}
+
+.top h1 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.profile {
+  background-color: #dddddd;
+  padding: 50px 20px;
+}
+
+.profile .profile__main {
+  margin: auto;
+  max-width: 800px;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  background-color: white;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .profile__main .profile__main__contents--container {
+  margin-left: 230px;
+}
+
+.profile .profile__main .profile__main__contents--container .profile__name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.profile .profile__main .profile__main__contents--container .profile__main__contents--container__content--container {
+  margin-top: 30px;
+}
+
+.profile .profile__main .profile__main__contents--container p {
+  text-align: start;
+}
+
+.profile .profile__main__image--container {
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.profile .profile__main__image--container img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile .profile__main__image--container:hover {
+  opacity: 0.7;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.profile .profile__ratating--image {
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.skill {
+  padding: 50px 20px;
+  background-color: #eeeeee;
+}
+
+.skill p {
+  line-height: 0;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.skill h4 {
+  margin-top: 30px;
+  border-bottom: 3px solid black;
+}
+
+.skill .skill__main {
+  margin: auto;
+  max-width: 800px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill .skill__main .skill__main__frontend {
+  padding: 30px 20px;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 400px;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language {
+  border: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language #htmlcss {
+  margin-top: 10px !important;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language .skill__main__frontend__language__container {
+  margin-top: 30px;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language .skill__main__frontend__language__container img {
+  height: 100px;
+  width: 100px;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework {
+  border: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework #jquery {
+  margin-top: 10px !important;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework .skill__main__frontend__framework__container {
+  margin-top: 30px;
+}
+
+.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework .skill__main__frontend__framework__container img {
+  height: 100px;
+  width: 100px;
+}
+
+.skill__main__backend {
+  background-color: white;
+  padding: 30px 20px;
+  width: 300px;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill__main__backend h4 {
+  margin-top: 30px;
+}
+
+.skill__main__backend .skill__main__backend__container img {
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+/*成果物*/
+.works {
+  background-color: #dddddd;
+  padding: 50px 20px;
+}
+
+.works .works__main {
+  margin: auto;
+  max-width: 800px;
+}
+
+.works .works__main #firstwork {
+  margin-top: 0px !important;
+}
+
+.works .works__main h3 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid black;
+}
+
+.works .works__main .works__main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  background-color: white;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 30px;
+}
+
+.works .works__main .works__main__container .works__main__container__image {
+  position: relative;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__pc {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  width: 100px;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__smart {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  width: 100px;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__btn__show {
+  display: inline-block;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__btn__show:active {
+  background-color: red;
+}
+
+.works .works__main .works__main__container .works__main__container__image img {
+  height: 200px;
+  width: 200px;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__pc:hover,
+.works .works__main .works__main__container .works__main__container__image .isara__smart:hover {
+  cursor: pointer;
+  background: #67c5ff;
+  color: white;
+}
+
+.works .works__main .works__main__container .works__main__container__image img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.works .works__main .works__main__container .works__main__container__image .isara__thum:hover {
+  cursor: auto;
+}
+
+.works .works__main .works__main__container .works__main__container__content {
+  margin-left: 30px;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .works__main__container__content__header--title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .arrow {
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color: transparent transparent #565656 #565656;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .arrow--reverse {
+  border-color: #565656 #565656 transparent transparent;
+  -webkit-transform: translateX(-50%) translateY(50%) rotate(-45deg);
+          transform: translateX(-50%) translateY(50%) rotate(-45deg);
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main {
+  text-align: start !important;
+}
+
+@-webkit-keyframes animation-sample {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes animation-sample {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .works__main__container__content--main__container--header {
+  display: inline-block;
+  text-align: start !important;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .underline {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(0, yellow));
+  background: linear-gradient(transparent 0, yellow 0);
+  -webkit-animation-name: animation-sample;
+          animation-name: animation-sample;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  height: 10px;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main p {
+  text-align: start;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main h4 {
+  margin-top: 30px;
+  text-align: start;
+  line-height: 0;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main ul {
+  margin-left: 20px;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main li {
+  text-align: start;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__github {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  bottom: 0;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__github div {
+  -webkit-box-shadow: 0px 8px 8px -5px GRAY;
+          box-shadow: 0px 8px 8px -5px GRAY;
+  background: #ececec;
+  border-radius: 50px;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__github div:hover {
+  background: #dad1d1;
+  color: white;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__github a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+}
+
+/*コンタクト*/
+.contact {
+  padding: 50px 20px;
+  background-color: #eeeeee;
+}
+
+.contact .contact__main {
+  margin: auto;
+  max-width: 800px;
+}
+
+.contact .contact__main .contact__main__email {
+  padding: 30px 50px;
+  background-color: gray;
+  margin-bottom: 30px;
+}
+
+.contact .contact__main .contact__main__email p {
+  color: white;
+  font-size: 32px;
+}
+
+.contact .contact__main .contact__main__sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: black;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/*フッター*/
+.footer {
+  padding: 20px 0;
+}
+
+/*トップに戻る*/
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.gototop .gototop__arrow {
+  width: 30px;
+  height: 30px;
+  border: 5px solid;
+  border-color: #565656 #565656 transparent transparent;
+  -webkit-transform: translateX(50%) translateY(75%) rotate(-45deg);
+          transform: translateX(50%) translateY(75%) rotate(-45deg);
+}
+
+.gototop:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=style.css.map */
