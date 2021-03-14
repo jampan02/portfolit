@@ -29,30 +29,34 @@ $(function () {
   });
 
   //ヘッダーを押してスムーススクロールするための関数
-  $(function () {
-    $('a[href^="#"]').click(function () {
-      var speed = 500;
-      var href = $(this).attr("href");
-      var target = $(href == "#" || href == "" ? "html" : href);
-      var position = target.offset().top;
-      $("html, body").animate({ scrollTop: position - 50 }, speed, "swing");
-      return false;
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    $(function () {
+      $('a[href^="#"]').click(function () {
+        var speed = 500;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? "html" : href);
+        var position = target.offset().top;
+        $("html, body").animate({ scrollTop: position - 50 }, speed, "swing");
+        return false;
+      });
     });
-  });
+  }
 
   //ページをスクロールすると、ヘッダーが出現する関数
   var topBtn = $(".header");
   var backTopBtn = $(".gototop");
   topBtn.hide();
   backTopBtn.hide();
-  //スクロールが1に達したらボタン表示
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
-      topBtn.fadeIn();
-    } else {
-      topBtn.fadeOut();
-    }
-  });
+  //スクロールが1に達したらボタン表示(パソコンのみ)
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        topBtn.fadeIn();
+      } else {
+        topBtn.fadeOut();
+      }
+    });
+  }
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
       backTopBtn.fadeIn();
@@ -100,15 +104,30 @@ $(function () {
   });
 
   //プロフィールナビゲーション
-  $(".top-gotoprofile").click(function () {
-    $("body,html").animate(
-      {
-        scrollTop: $("#profile").offset().top - 50,
-      },
-      500
-    );
-    return false;
-  });
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    $(".top-gotoprofile").click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: $("#profile").offset().top - 50,
+        },
+        500
+      );
+      return false;
+    });
+  }
+
+  //それのタブレット以下の場合
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    $(".top-gotoprofile").click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: $("#profile").offset().top,
+        },
+        500
+      );
+      return false;
+    });
+  }
 
   //画像ホバーで、選択画面表示関数
 
