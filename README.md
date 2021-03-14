@@ -11,3 +11,4 @@
 - Javascript
 - jQuery
 ## その他
+github pagesによってデプロイしました
