@@ -304,7 +304,7 @@ a {
     max-width: 800px;
     .works__main__container {
       display: flex;
-      flex-wrap: wrap;
+      /*flex-wrap: wrap;*/
       box-shadow: 0 0 8px gray;
       background-color: white;
       margin-bottom: 40px;
@@ -312,6 +312,7 @@ a {
       padding: 30px;
       @media (max-width: 768px) {
         padding: 10px 10px 20px 10px;
+        flex-direction: column;
       }
       .works__main__container__image {
         position: relative;
