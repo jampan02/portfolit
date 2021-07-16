@@ -43,7 +43,9 @@ li,
 a {
   color: #3b3c3d;
 }
-
+.blog-font {
+  color: #6495ed;
+}
 .header {
   margin-bottom: 70px;
   z-index: 100;
@@ -196,6 +198,11 @@ a {
 }
 
 .skill {
+  img {
+    //  height: 100px;
+    width: 100px;
+  }
+
   padding: 50px 20px;
   background-color: #eeeeee;
   p {
@@ -209,6 +216,7 @@ a {
   }
   .skill__main {
     margin: auto;
+    align-items: start;
     max-width: 800px;
     flex-wrap: wrap;
     display: flex;
@@ -216,45 +224,16 @@ a {
     @media (max-width: 768px) {
       justify-content: center;
     }
-    .skill__main__frontend {
+    .skill__main__container__container {
       padding: 30px 20px;
       box-shadow: 0 0 8px gray;
-      display: flex;
-      flex-direction: column;
       background-color: white;
-      width: 400px;
-      .skill__main__frontend__container {
+      .skill__main__container {
+        margin-top: 30px;
         display: flex;
-        justify-content: space-around;
-        .skill__main__frontend__language {
-          border: orange;
-          display: flex;
-          flex-direction: column;
-          #htmlcss {
-            margin-top: 10px !important;
-          }
-          .skill__main__frontend__language__container {
-            margin-top: 30px;
-            img {
-              height: 100px;
-              width: 100px;
-            }
-          }
-        }
-        .skill__main__frontend__framework {
-          border: orange;
-          display: flex;
-          flex-direction: column;
-          #jquery {
-            margin-top: 10px !important;
-          }
-          .skill__main__frontend__framework__container {
-            margin-top: 30px;
-            img {
-              height: 100px;
-              width: 100px;
-            }
-          }
+        flex-direction: column;
+        .skill__main__content__container {
+          margin-bottom: 20px;
         }
       }
       @media (max-width: 768px) {
@@ -262,28 +241,6 @@ a {
         margin-bottom: 20px;
       }
     }
-  }
-}
-.skill__main__backend {
-  background-color: white;
-  h4 {
-    margin-top: 30px;
-  }
-  padding: 30px 20px;
-  width: 300px;
-  box-shadow: 0 0 8px gray;
-  display: flex;
-  flex-direction: column;
-
-  .skill__main__backend__container {
-    img {
-      margin-top: 10px;
-      height: 100px;
-      width: 100px;
-    }
-  }
-  @media (max-width: 768px) {
-    width: 100%;
   }
 }
 

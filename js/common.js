@@ -1,10 +1,6 @@
 $(function () {
-  //言語を隠す
-  $(".skill__main__frontend__language").hide();
-  //フレームワークを隠す
-  $(".skill__main__frontend__framework").hide();
-  //mbaasを隠す
-  $(".skill__main__backend__baas").hide();
+  //隠す
+  $(".skill__main__container").hide();
 
   //初期値状態で、成果物の詳細を隠す
   $(".works__main__container__content--main").hide();
@@ -77,19 +73,13 @@ $(function () {
   //skillまでスクロールされたら、それらを表示する関数
   $(window).scroll(function () {
     if ($(this).scrollTop() > $("#skill").offset().top) {
-      $(".skill__main__frontend__language").slideDown(500);
-      $(".skill__main__frontend__framework").slideDown(500);
-      $(".skill__main__backend__baas").slideDown(500);
+      $(".skill__main__container").slideDown(500);
     }
   });
 
   //hoverされても表示するための関数
-  $(".skill__main__frontend").hover(function () {
-    $(".skill__main__frontend__language").slideDown(500);
-    $(".skill__main__frontend__framework").slideDown(500);
-  });
-  $(".skill__main__backend").hover(function () {
-    $(".skill__main__backend__baas").slideDown(500);
+  $(".skill__main__container__container").hover(function () {
+    $(".skill__main__container").slideDown(500);
   });
 
   //矢印を押したらトップへ戻る

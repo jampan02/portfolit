@@ -59,6 +59,10 @@ a {
   color: #3b3c3d;
 }
 
+.blog-font {
+  color: #6495ed;
+}
+
 .header {
   margin-bottom: 70px;
   z-index: 100;
@@ -276,6 +280,10 @@ a {
   background-color: #eeeeee;
 }
 
+.skill img {
+  width: 100px;
+}
+
 .skill p {
   line-height: 0;
   font-weight: bold;
@@ -289,6 +297,9 @@ a {
 
 .skill .skill__main {
   margin: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   max-width: 800px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -308,31 +319,15 @@ a {
   }
 }
 
-.skill .skill__main .skill__main__frontend {
+.skill .skill__main .skill__main__container__container {
   padding: 30px 20px;
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
-  width: 400px;
 }
 
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language {
-  border: orange;
+.skill .skill__main .skill__main__container__container .skill__main__container {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,78 +337,14 @@ a {
           flex-direction: column;
 }
 
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language #htmlcss {
-  margin-top: 10px !important;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language .skill__main__frontend__language__container {
-  margin-top: 30px;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__language .skill__main__frontend__language__container img {
-  height: 100px;
-  width: 100px;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework {
-  border: orange;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework #jquery {
-  margin-top: 10px !important;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework .skill__main__frontend__framework__container {
-  margin-top: 30px;
-}
-
-.skill .skill__main .skill__main__frontend .skill__main__frontend__container .skill__main__frontend__framework .skill__main__frontend__framework__container img {
-  height: 100px;
-  width: 100px;
+.skill .skill__main .skill__main__container__container .skill__main__container .skill__main__content__container {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-  .skill .skill__main .skill__main__frontend {
+  .skill .skill__main .skill__main__container__container {
     width: 100%;
     margin-bottom: 20px;
-  }
-}
-
-.skill__main__backend {
-  background-color: white;
-  padding: 30px 20px;
-  width: 300px;
-  -webkit-box-shadow: 0 0 8px gray;
-          box-shadow: 0 0 8px gray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skill__main__backend h4 {
-  margin-top: 30px;
-}
-
-.skill__main__backend .skill__main__backend__container img {
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
-}
-
-@media (max-width: 768px) {
-  .skill__main__backend {
-    width: 100%;
   }
 }
 
