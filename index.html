@@ -12,11 +12,7 @@
       name="keywords"
       content="ポートフォリオ,駆け出しエンジニア,エンジニア"
     />
-    <link
-      rel="shortcut icon"
-      href="favicon.ico"
-      　type="image/vnd.microsoft.icon"
-    />
+    <link rel="shortcut icon" href="favicon.ico" />
     <!--リセット用css-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <meta
@@ -60,7 +56,7 @@
         <h2><i class="fas fa-user"></i>PROFILE</h2>
         <div class="profile__main">
           <div class="profile__main__image--container">
-            <img src="./images/profile-image.jpg" />
+            <img src="./images/profile-image.jpg" alt="プロフィール" />
           </div>
           <div class="profile__main__contents--container">
             <p class="profile__name">Tatsuya Otsuka</p>
@@ -113,7 +109,7 @@
             <div class="skill__main__container">
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/html-css.png" />
+                  <img src="./images/images-skill/html-css.png" alt="HTML" />
                 </div>
                 <div>
                   <p
@@ -127,7 +123,10 @@
               </div>
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/javascript.svg" />
+                  <img
+                    src="./images/images-skill/javascript.svg"
+                    alt="Javascript"
+                  />
                 </div>
                 <div>
                   <p
@@ -141,7 +140,10 @@
               </div>
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/typescript.svg" />
+                  <img
+                    src="./images/images-skill/typescript.svg"
+                    alt="Typescript"
+                  />
                 </div>
                 <div>
                   <p
@@ -155,7 +157,7 @@
               </div>
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/jquery.png" />
+                  <img src="./images/images-skill/jquery.png" alt="JQuery" />
                 </div>
                 <div>
                   <p
@@ -169,7 +171,7 @@
               </div>
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/react.png" />
+                  <img src="./images/images-skill/react.png" alt="React" />
                 </div>
                 <div>
                   <p
@@ -183,7 +185,7 @@
               </div>
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/nextjs.svg" />
+                  <img src="./images/images-skill/nextjs.svg" alt="Next.js" />
                 </div>
                 <div>
                   <p
@@ -202,7 +204,7 @@
             <div class="skill__main__container">
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/php.png" />
+                  <img src="./images/images-skill/php.png" alt="PHP" />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -213,7 +215,7 @@
 
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/laravel.svg" />
+                  <img src="./images/images-skill/laravel.svg" alt="Laravel" />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -224,7 +226,7 @@
 
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/mysql.png" />
+                  <img src="./images/images-skill/mysql.png" alt="MySQL" />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -239,7 +241,10 @@
             <div class="skill__main__container">
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/firebase.png" />
+                  <img
+                    src="./images/images-skill/firebase.png"
+                    alt="Firebase"
+                  />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -250,7 +255,7 @@
 
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/docker.png" />
+                  <img src="./images/images-skill/docker.png" alt="Docker" />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -261,7 +266,7 @@
 
               <div class="skill__main__content__container">
                 <div>
-                  <img src="./images/images-skill/aws.png" />
+                  <img src="./images/images-skill/aws.png" alt="AWS" />
                 </div>
                 <div>
                   <p class="skill__main__backend__container__content--title">
@@ -281,7 +286,10 @@
           <div class="works__main__container">
             <div class="works__main__container__image">
               <a href="https://yuarueru.com/" target="_blank">
-                <img src="./images/images-works/yuarueru.png" />
+                <img
+                  src="./images/images-works/yuarueru.png"
+                  alt="ゆあるえる"
+                />
               </a>
             </div>
             <div class="works__main__container__content">
@@ -311,9 +319,36 @@
                   <h4>なぜ作ったのか</h4>
                   <div class="underline"></div>
                 </div>
-                <p>
-                  自分の価値観を他人に共有したい人は多くいると考えたからです。
-                </p>
+                <p>自分の価値観を他人に共有したい人は多くいると考えたから</p>
+                <div
+                  class="
+                    works__main__container__content--main__container--header
+                  "
+                >
+                  <h4>制作時期・期間</h4>
+                  <div class="underline"></div>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    時期
+                  </h5>
+                  <p>2021年 6月中旬</p>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    期間
+                  </h5>
+                  <p>1か月程度。現在も積極的に機能追加に注力している。</p>
+                </div>
+
                 <div
                   class="
                     works__main__container__content--main__container--header
@@ -357,7 +392,7 @@
           <div class="works__main__container">
             <div class="works__main__container__image">
               <a href="https://guroun-b67f4.web.app/" target="_blank">
-                <img src="./images/images-works/guroun.png" />
+                <img src="./images/images-works/guroun.png" alt="ぐろうん" />
               </a>
             </div>
             <div class="works__main__container__content">
@@ -388,8 +423,37 @@
                   <div class="underline"></div>
                 </div>
                 <p>
-                  私は趣味で筋トレをしており、それの記録を取りたいと考えたからです
+                  私は趣味で筋トレをしており、それの記録を取りたいと考えたから
                 </p>
+                <div
+                  class="
+                    works__main__container__content--main__container--header
+                  "
+                >
+                  <h4>制作時期・期間</h4>
+                  <div class="underline"></div>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    時期
+                  </h5>
+                  <p>2020年 7月</p>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    期間
+                  </h5>
+                  <p>半月程度。</p>
+                </div>
+
                 <div
                   class="
                     works__main__container__content--main__container--header
@@ -399,10 +463,10 @@
                   <div class="underline"></div>
                 </div>
                 <ul>
-                  <li>ログイン・ログアウトが出来る</li>
-                  <li>作成はもちろん、削除も更新も出来る</li>
-                  <li>レスポンシブ対応だからスマホでも安心</li>
-                  <li>SPA対応で素早く閲覧できる</li>
+                  <li>認証機能</li>
+                  <li>CRUD</li>
+                  <li>レスポンシブ対応</li>
+                  <li>SPA</li>
                 </ul>
                 <div
                   class="
@@ -429,7 +493,10 @@
           <div class="works__main__container">
             <div class="works__main__container__image">
               <a href="https://frontedcode.com" target="_blank">
-                <img src="./images/images-works/frontedcode.png" />
+                <img
+                  src="./images/images-works/frontedcode.png"
+                  alt="FrontedCode"
+                />
               </a>
             </div>
             <div class="works__main__container__content">
@@ -460,8 +527,36 @@
                   <div class="underline"></div>
                 </div>
                 <p>
-                  以前、Wordpressでブログを書いていましたがCMSを使用せずゼロから作ってみたいと考えたからです。
+                  以前、Wordpressでブログを書いていましたがCMSを使用せずゼロから作ってみたいと考えたから
                 </p>
+                <div
+                  class="
+                    works__main__container__content--main__container--header
+                  "
+                >
+                  <h4>制作時期・期間</h4>
+                  <div class="underline"></div>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    時期
+                  </h5>
+                  <p>2021年 2月</p>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    期間
+                  </h5>
+                  <p>2週間程度。頻繁に更新しております。(21/07/22)</p>
+                </div>
                 <div
                   class="
                     works__main__container__content--main__container--header
@@ -471,9 +566,13 @@
                   <div class="underline"></div>
                 </div>
                 <ul>
-                  <li>JAMstack</li>
+                  <li>カテゴリー別機能</li>
+                  <li>アーカイブ機能</li>
                   <li>検索機能</li>
                   <li>サイトマップ</li>
+                  <li>JAMstack</li>
+                  <li>SSG</li>
+                  <li>パンくずリスト</li>
                 </ul>
                 <div
                   class="
@@ -499,6 +598,7 @@
             <div class="works__main__container__image">
               <img
                 src="./images/images-works/isara-thumnail.png"
+                alt="サムネイル"
                 class="isara__thum"
               />
 
@@ -536,7 +636,36 @@
                   <div class="underline"></div>
                 </div>
                 <p>十分なボリュームで、直感的なデザインに刺激されたから</p>
-
+                <div
+                  class="
+                    works__main__container__content--main__container--header
+                  "
+                >
+                  <h4>制作時期・期間</h4>
+                  <div class="underline"></div>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    時期
+                  </h5>
+                  <p>2020年 7月</p>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    期間
+                  </h5>
+                  <p>
+                    3か月程度。ボリュームが多く、途中から失速してしまったがなんとか完成させた。
+                  </p>
+                </div>
                 <div
                   class="
                     works__main__container__content--main__container--header
@@ -573,8 +702,11 @@
           </div>
           <div class="works__main__container works--portfolio">
             <div class="works__main__container__image">
-              <a href="https://jampan02.github.io/portfolio/">
-                <img src="./images/images-works/portfolit.png" />
+              <a href="https://jampan02.github.io/portfolit/">
+                <img
+                  src="./images/images-works/portfolit.png"
+                  alt="ポートフォリオ"
+                />
               </a>
             </div>
             <div class="works__main__container__content">
@@ -603,8 +735,35 @@
                   <h4>なぜ作ったのか</h4>
                   <div class="underline"></div>
                 </div>
-                <p>私のできることを、証明するためです</p>
-
+                <p>私のできることを、証明するため</p>
+                <div
+                  class="
+                    works__main__container__content--main__container--header
+                  "
+                >
+                  <h4>制作時期・期間</h4>
+                  <div class="underline"></div>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    時期
+                  </h5>
+                  <p>2021年 4月</p>
+                </div>
+                <div class="time__container">
+                  <h5
+                    class="
+                      works__main__container__content--main__container--header__h5
+                    "
+                  >
+                    期間
+                  </h5>
+                  <p>2週間程度。現在も、軽量化等の作業に注力している。</p>
+                </div>
                 <div
                   class="
                     works__main__container__content--main__container--header

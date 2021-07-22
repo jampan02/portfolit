@@ -38,6 +38,7 @@ H4 {
     font-size: 16px;
   }
 }
+
 p,
 li,
 a {
@@ -365,6 +366,17 @@ a {
           .works__main__container__content--main__container--header {
             display: inline-block;
             text-align: start !important;
+          }
+          .works__main__container__content--main__container--header__h5 {
+            text-align: start;
+            font-size: 16px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+
+          .time__container {
+            margin-top: 10px;
           }
           .underline {
             background: linear-gradient(transparent 0, yellow 0);

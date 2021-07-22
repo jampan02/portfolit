@@ -529,6 +529,21 @@ a {
   text-align: start !important;
 }
 
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .works__main__container__content--main__container--header__h5 {
+  text-align: start;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .works__main__container__content--main__container--header__h5 {
+    font-size: 14px;
+  }
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .time__container {
+  margin-top: 10px;
+}
+
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content--main .underline {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(0, yellow));
   background: linear-gradient(transparent 0, yellow 0);
