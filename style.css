@@ -72,9 +72,9 @@ a {
   width: 100%;
   -webkit-box-shadow: 0px 8px 8px -5px GRAY;
           box-shadow: 0px 8px 8px -5px GRAY;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -84,7 +84,7 @@ a {
 
 @media (max-width: 768px) {
   .header {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -162,6 +162,12 @@ a {
 .profile {
   background-color: #dddddd;
   padding: 50px 20px;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 30px 10px;
+  }
 }
 
 .profile .profile__main {
@@ -280,6 +286,12 @@ a {
   background-color: #eeeeee;
 }
 
+@media (max-width: 768px) {
+  .skill {
+    padding: 30px 10px;
+  }
+}
+
 .skill img {
   width: 100px;
 }
@@ -352,6 +364,12 @@ a {
 .works {
   background-color: #dddddd;
   padding: 50px 20px;
+}
+
+@media (max-width: 768px) {
+  .works {
+    padding: 30px 10px;
+  }
 }
 
 .works .works__main {
@@ -608,6 +626,12 @@ a {
   background-color: #eeeeee;
 }
 
+@media (max-width: 768px) {
+  .contact {
+    padding: 30px 10px;
+  }
+}
+
 .contact .contact__main {
   margin: auto;
   max-width: 800px;
@@ -618,11 +642,49 @@ a {
   background-color: gray;
   margin-bottom: 30px;
   overflow: scroll;
+  position: relative;
 }
 
 .contact .contact__main .contact__main__email p {
   color: white;
   font-size: 32px;
+}
+
+.contact .contact__main .contact__main__email .copy__button__container {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #339af0;
+  left: 10px;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .contact .contact__main .contact__main__email .copy__button__container {
+    width: auto;
+    height: auto;
+    left: 5px;
+    top: 5px;
+  }
+}
+
+.contact .contact__main .contact__main__email .copy__button__container .copy__button {
+  color: #fff;
+}
+
+.contact .contact__main .contact__main__email .copy__button__container:hover {
+  background-color: #1a72ba;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

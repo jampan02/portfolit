@@ -55,11 +55,11 @@ a {
   background-color: #eeeeee;
   width: 100%;
   box-shadow: 0px 8px 8px -5px GRAY;
-  display: flex;
+  display: flex !important;
   justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {
-    display: none;
+    display: none !important;
   }
   .header__content {
     cursor: pointer;
@@ -126,6 +126,9 @@ a {
 .profile {
   background-color: #dddddd;
   padding: 50px 20px;
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
   .profile__main {
     margin: auto;
     max-width: 800px;
@@ -199,6 +202,9 @@ a {
 }
 
 .skill {
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
   img {
     //  height: 100px;
     width: 100px;
@@ -249,6 +255,9 @@ a {
 .works {
   background-color: #dddddd;
   padding: 50px 20px;
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
   .works__main {
     #firstwork {
       margin-top: 0px !important;
@@ -429,6 +438,9 @@ a {
 }
 /*コンタクト*/
 .contact {
+  @media (max-width: 768px) {
+    padding: 30px 10px;
+  }
   padding: 50px 20px;
   background-color: #eeeeee;
   .contact__main {
@@ -440,9 +452,36 @@ a {
       background-color: gray;
       margin-bottom: 30px;
       overflow: scroll;
+
+      position: relative;
       p {
         color: white;
         font-size: 32px;
+      }
+      .copy__button__container {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        background-color: #339af0;
+        left: 10px;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+          width: auto;
+          height: auto;
+          left: 5px;
+          top: 5px;
+        }
+        .copy__button {
+          color: #fff;
+        }
+      }
+      .copy__button__container:hover {
+        background-color: #1a72ba;
+        cursor: pointer;
       }
       @media (max-width: 768px) {
         padding: 20px 10px;

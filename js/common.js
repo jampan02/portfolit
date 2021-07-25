@@ -10,12 +10,14 @@ $(function () {
   //押した瞬間、成果物の詳細を表示する関数
   $(".arrow").click(function () {
     if ($(this).hasClass("arrow--reverse")) {
+      //閉じる
       $(this).removeClass("arrow--reverse");
       $(this)
         .parents(".works__main__container__content")
         .find(".works__main__container__content--main")
         .slideUp();
     } else {
+      //開く
       $(this).addClass("arrow--reverse");
       $(this)
         .parents(".works__main__container__content")
@@ -139,4 +141,18 @@ $(function () {
       $(".isara__pc,.isara__smart").removeClass("isara__btn__show");
     }
   );
+  /// コピーテキストボタンを実装
+  $(".copy__button__container").on("click", function () {
+    /// テキスト要素を選択＆クリップボードにコピー
+    var textElem = $(this).parent().find(".text");
+    window.getSelection().selectAllChildren(textElem[0]);
+    document.execCommand("copy");
+    //トースト通知
+    /// オプション変更
+    toastr.options = {
+      positionClass: "toast-bottom-left",
+      timeOut: "1000",
+    };
+    toastr.success("copied!");
+  });
 });

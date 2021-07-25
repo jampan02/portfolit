@@ -21,9 +21,14 @@
     />
     <!--css-->
     <link rel="stylesheet" href="./style.css" />
-
+    <!--jQuery-->
     <script src="./js/lib/jquery-3.5.1.min.js"></script>
-
+    <!--トースターライブラリ-->
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!--fontawesome-->
     <script
       src="https://kit.fontawesome.com/2292d88f28.js"
@@ -294,7 +299,12 @@
             </div>
             <div class="works__main__container__content">
               <div class="works__main__container__content__header">
-                <p class="works__main__container__content__header--title">
+                <p
+                  class="
+                    works__main__container__content__header--title
+                    work-title
+                  "
+                >
                   ゆうあるえる
                 </p>
                 <div class="arrow"></div>
@@ -389,7 +399,8 @@
               </div>
             </div>
           </div>
-          <div class="works__main__container">
+          <!--
+<div class="works__main__container">
             <div class="works__main__container__image">
               <a href="https://guroun-b67f4.web.app/" target="_blank">
                 <img src="./images/images-works/guroun.png" alt="ぐろうん" />
@@ -490,6 +501,8 @@
               </div>
             </div>
           </div>
+
+		  -->
           <div class="works__main__container">
             <div class="works__main__container__image">
               <a href="https://frontedcode.com" target="_blank">
@@ -809,7 +822,10 @@
           <div class="contact__main">
             <h3>メール</h3>
             <div class="contact__main__email">
-              <p>jampan021@gmail.com</p>
+              <p class="text">jampan021@gmail.com</p>
+              <span class="copy__button__container">
+                <i class="fas fa-copy fa-lg copy__button"></i>
+              </span>
             </div>
             <h3>SNS</h3>
             <div class="contact__main__sns">
