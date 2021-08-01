@@ -55,7 +55,7 @@ a {
   background-color: #eeeeee;
   width: 100%;
   box-shadow: 0px 8px 8px -5px GRAY;
-  display: flex !important;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {

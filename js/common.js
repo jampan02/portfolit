@@ -1,11 +1,9 @@
 $(function () {
-  //隠す
+  //skillsの詳細を隠す
   $(".skill__main__container").hide();
 
   //初期値状態で、成果物の詳細を隠す
   $(".works__main__container__content--main").hide();
-
-  //初期状態で、isaraのボタンを隠す
 
   //押した瞬間、成果物の詳細を表示する関数
   $(".arrow").click(function () {
@@ -50,11 +48,14 @@ $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 1) {
         topBtn.fadeIn();
+        //display:flexにする
+        topBtn.css("display", "flex");
       } else {
         topBtn.fadeOut();
       }
     });
   }
+  //上へ戻るボタンを、スクロールしたら表示させる
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
       backTopBtn.fadeIn();
