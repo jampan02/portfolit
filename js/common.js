@@ -124,24 +124,11 @@ $(function () {
 
   //画像ホバーで、選択画面表示関数
 
-  $(".isara__pc").click(function () {
+  $(".isara__image__container").click(function () {
     window.open("images/images-works/isara-pc.png");
-  });
-
-  $(".isara__smart").click(function () {
     window.open("images/images-works/isara-mobile.png");
   });
 
-  $(".isara__thum,.isara__pc,.isara__smart").hover(
-    function () {
-      $(".isara__thum").css({ opacity: "0.1" });
-      $(".isara__pc,.isara__smart").addClass("isara__btn__show");
-    },
-    function () {
-      $(".isara__thum").css({ opacity: "1" });
-      $(".isara__pc,.isara__smart").removeClass("isara__btn__show");
-    }
-  );
   /// コピーテキストボタンを実装
   $(".copy__button__container").on("click", function () {
     /// テキスト要素を選択＆クリップボードにコピー

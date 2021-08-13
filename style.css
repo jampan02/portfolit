@@ -464,11 +464,6 @@ a {
   color: white;
 }
 
-.works .works__main .works__main__container .works__main__container__image img:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
 .works .works__main .works__main__container .works__main__container__image .isara__thum:hover {
   cursor: auto;
 }
@@ -487,20 +482,80 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* Wobble Vertical */
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .link__container {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .link__container:hover {
-  color: #ff3399;
+  opacity: 0.7;
+  -webkit-animation-name: wobble-vertical;
+          animation-name: wobble-vertical;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  cursor: pointer;
 }
 
-.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .fa-link:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+@-webkit-keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .works__main__container__content__header--title {
@@ -618,13 +673,14 @@ a {
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__github div {
   -webkit-box-shadow: 0px 8px 8px -5px GRAY;
           box-shadow: 0px 8px 8px -5px GRAY;
-  background: #ececec;
+  background: #eeeaea;
   border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__github div:hover {
-  background: #dad1d1;
-  color: white;
+  background: #dcd5d5;
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__github a {
@@ -632,6 +688,7 @@ a {
   color: black;
   display: block;
   padding: 10px;
+  opacity: 1;
 }
 
 /*コンタクト*/
