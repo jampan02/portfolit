@@ -465,7 +465,7 @@ a {
 }
 
 .works .works__main .works__main__container .works__main__container__image img:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -487,6 +487,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .link__container {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .link__container:hover {
+  color: #ff3399;
+}
+
+.works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .fa-link:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .works .works__main .works__main__container .works__main__container__content .works__main__container__content__header .works__main__container__content__header--title {

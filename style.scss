@@ -324,7 +324,7 @@ a {
           color: white;
         }
         img:hover {
-          opacity: 0.5;
+          opacity: 0.7;
           cursor: pointer;
         }
         .isara__thum:hover {
@@ -338,6 +338,12 @@ a {
         }
         .works__main__container__content__header {
           display: flex;
+          .link__container {
+            transition: 0.3s;
+          }
+          .link__container:hover {
+            color: #ff3399;
+          }
           .works__main__container__content__header--title {
             font-weight: bold;
             font-size: 24px;
