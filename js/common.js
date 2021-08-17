@@ -124,9 +124,9 @@ $(function () {
 
   //画像ホバーで、選択画面表示関数
 
-  $(".isara__image__container").click(function () {
-    window.open("images/images-works/isara-pc.png");
-    window.open("images/images-works/isara-mobile.png");
+  $(".isara__link").click(function () {
+    window.open("images/images-works/isara/isara-pc.png");
+    window.open("images/images-works/isara/isara-mobile.png");
   });
 
   /// コピーテキストボタンを実装
